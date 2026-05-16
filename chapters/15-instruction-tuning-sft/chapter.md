@@ -4,7 +4,7 @@ title: Instruction Tuning (SFT)
 part: IV. Post-training & Alignment
 ---
 
-<p>Supervised fine-tuning (SFT) on instruction-response pairs converts a base completion model into a usable
+<p><a href="https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)" target="_blank" rel="noopener">Supervised fine-tuning</a> (SFT) on instruction-response pairs converts a base completion model into a usable
 assistant. It is the cheapest, most reliable alignment intervention you have. Quality of data dominates quantity:
 LIMA (Zhou et al., 2023) showed 1,000 carefully curated examples can produce a strong assistant.</p>
 <h4>Practical tips</h4>

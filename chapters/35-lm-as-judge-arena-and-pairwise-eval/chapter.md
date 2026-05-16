@@ -4,7 +4,7 @@ title: LM-as-Judge, Arena, and Pairwise Eval
 part: IX. Evaluation
 ---
 
-<p>For open-ended generation, automated metrics (BLEU, ROUGE) are weak. <b>LMSYS Chatbot Arena</b> uses crowdsourced
+<p>For open-ended generation, automated metrics (<a href="https://en.wikipedia.org/wiki/BLEU" target="_blank" rel="noopener">BLEU</a>, <a href="https://en.wikipedia.org/wiki/ROUGE_(metric)" target="_blank" rel="noopener">ROUGE</a>) are weak. <b>LMSYS Chatbot Arena</b> uses crowdsourced
 pairwise human votes; <b>MT-Bench</b> uses an LM judge. Both are influential, both have known issues (length bias,
 position bias, judge-model preference for its own family). Read Zheng et al. for the standard caveats and
 de-biasing techniques.</p>

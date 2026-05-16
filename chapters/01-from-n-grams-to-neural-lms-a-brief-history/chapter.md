@@ -4,8 +4,8 @@ title: From n-grams to Neural LMs: A Brief History
 part: I. Foundations
 ---
 
-<p>Before transformers there were <b>n-gram</b> models (Shannon, 1948), <b>feed-forward neural language models</b>
-(Bengio et al., 2003), and <b>recurrent</b> language models (Mikolov, 2010). The leap was learning <i>distributed
+<p>Before transformers there were <b><a href="https://en.wikipedia.org/wiki/N-gram" target="_blank" rel="noopener">n-gram</a></b> models (Shannon, 1948), <b>feed-forward neural language models</b>
+(Bengio et al., 2003), and <b><a href="https://en.wikipedia.org/wiki/Recurrent_neural_network" target="_blank" rel="noopener">recurrent</a></b> language models (Mikolov, 2010). The leap was learning <i>distributed
 representations</i> instead of memorizing surface forms. Read this chapter as motivation: the modern stack inherits
 the same objective — predict the next token — but at radically larger scale and with far better architectures.</p>
 

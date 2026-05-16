@@ -6,7 +6,7 @@ part: VII. Small Language Models
 
 <p>SLM deployment is a systems problem. Pillars:</p>
 <ul>
-  <li><b>Speculative decoding</b> (Leviathan; Chen et al.) — run a tiny draft model, let the big model verify.
+  <li><b><a href="https://en.wikipedia.org/wiki/Speculative_decoding" target="_blank" rel="noopener">Speculative decoding</a></b> (Leviathan; Chen et al.) — run a tiny draft model, let the big model verify.
       2-3x speedups on real workloads.</li>
   <li><b>Medusa, EAGLE</b> — draft heads inside the same model; even cheaper.</li>
   <li><b>KV-cache compression</b> — quantize KV; sliding-window attention; H2O / StreamingLLM eviction policies.</li>

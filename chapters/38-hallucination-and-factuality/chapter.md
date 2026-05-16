@@ -5,9 +5,9 @@ part: X. AI Safety & Alignment
 ---
 
 <p>LMs confabulate. Surveys (Huang et al., 2023) categorize input-conflicting, context-conflicting, and
-fact-conflicting hallucinations. Mitigations: RAG (Ch. 23), self-consistency (Ch. 19), abstention training,
+fact-conflicting hallucinations. Mitigations: <a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation" target="_blank" rel="noopener">RAG</a> (Ch. 23), self-consistency (Ch. 19), abstention training,
 and verifier/critic models. <b>SelfCheckGPT</b> and <b>FActScore</b> are useful evaluators.</p>
-<p>Honest framing for an executive: hallucination is <i>reduced</i>, not <i>eliminated</i>, by current techniques.
+<p>Honest framing for an executive: <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)" target="_blank" rel="noopener">hallucination</a> is <i>reduced</i>, not <i>eliminated</i>, by current techniques.
 Treat any LM output that informs a customer-facing decision as needing grounding + verification.</p>
 
 ## Papers

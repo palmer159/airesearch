@@ -5,7 +5,7 @@ part: II. Training & Data
 ---
 
 <p>Tokenization is the silent foundation. Modern LMs use <b>subword</b> tokenizers — most commonly
-<b>Byte-Pair Encoding (BPE)</b> in its byte-level form (GPT-2/3/4, Llama). Subwords give an open vocabulary,
+<b><a href="https://en.wikipedia.org/wiki/Byte_pair_encoding" target="_blank" rel="noopener">Byte-Pair Encoding</a> (BPE)</b> in its byte-level form (GPT-2/3/4, <a href="https://en.wikipedia.org/wiki/Llama_(language_model)" target="_blank" rel="noopener">Llama</a>). Subwords give an open vocabulary,
 robustness to typos, and compactness across languages.</p>
 
 <h4>Trade-offs</h4>

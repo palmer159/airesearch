@@ -6,7 +6,7 @@ part: XI. AI for Code & Software Engineering
 
 <p>The practitioner stack in 2026:</p>
 <ul>
-  <li><b>Inline completions</b>: GitHub Copilot, Cursor Tab, Continue.</li>
+  <li><b>Inline completions</b>: <a href="https://en.wikipedia.org/wiki/GitHub_Copilot" target="_blank" rel="noopener">GitHub Copilot</a>, Cursor Tab, Continue.</li>
   <li><b>Chat / refactor / multi-file edits</b>: Cursor Composer, Cline, Aider, Sourcegraph Cody.</li>
   <li><b>Autonomous agents (terminal-native)</b>: Claude Code, OpenHands, Devin.</li>
 </ul>
@@ -15,7 +15,7 @@ part: XI. AI for Code & Software Engineering
   <li>Code review and tests do <b>not</b> become optional — they become more important, because review surface
       grows when generation is cheap.</li>
   <li>Agents need narrow, well-documented tools — same lesson as LLM tool use generally.</li>
-  <li>Ergonomics dominate model quality once you are above a threshold (Claude 3.5+, GPT-4o+, Llama 3.1 70B+).</li>
+  <li>Ergonomics dominate model quality once you are above a threshold (Claude 3.5+, GPT-4o+, <a href="https://en.wikipedia.org/wiki/Llama_(language_model)" target="_blank" rel="noopener">Llama</a> 3.1 70B+).</li>
 </ul>
 
 ## Papers

@@ -12,7 +12,7 @@ part: XII. Research Frontier
   <li>Second pass: figures (especially Fig 1 and the main results table), method outline. 30 minutes.</li>
   <li>Third pass: read for the gotcha — eval contamination, missing baselines, hyperparameter cherry-picking, ablation gaps.</li>
 </ol>
-<h4>Reproducing</h4>
+<h4><a href="https://en.wikipedia.org/wiki/Reproducibility" target="_blank" rel="noopener">Reproducing</a></h4>
 <ul>
   <li>Prefer official code; otherwise <code>nanoGPT</code>, <code>llm.c</code>, <code>tinygrad</code>, or <code>HF transformers</code>.</li>
   <li>Get a tiny model training on your laptop in &lt;10 minutes before you spin GPUs.</li>

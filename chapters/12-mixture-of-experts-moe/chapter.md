@@ -5,11 +5,11 @@ part: III. Architecture Frontiers
 ---
 
 <p>An MoE layer routes each token to <b>k of N</b> expert FFNs (typically k=2). You get the parameter count of
-a huge model with the FLOPs of a small one — a different point on the cost/quality Pareto.</p>
+a huge model with the <a href="https://en.wikipedia.org/wiki/FLOPS" target="_blank" rel="noopener">FLOPs</a> of a small one — a different point on the cost/quality Pareto.</p>
 <p>Modern MoE systems (Mixtral, DeepSeek-V2/V3, Qwen3-MoE, Grok-1) report 5-10x parameter counts at similar serving
 cost. Challenges: load balancing, expert collapse, training instability, and routing-as-side-channel for inference cost prediction.</p>
 
-<h4>Routing math (top-k softmax)</h4>
+<h4>Routing math (top-k <a href="https://en.wikipedia.org/wiki/Softmax_function" target="_blank" rel="noopener">softmax</a>)</h4>
 <pre>
 g_i = softmax(W_gate · x)        # gate logits per expert
 top_k = TopK(g_i, k)              # active experts for this token

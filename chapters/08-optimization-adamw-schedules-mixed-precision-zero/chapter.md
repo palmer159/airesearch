@@ -4,11 +4,11 @@ title: Optimization: AdamW, Schedules, Mixed Precision, ZeRO
 part: II. Training & Data
 ---
 
-<p>Training a transformer is mostly engineering. The defaults that work today:</p>
+<p>Training a <a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" target="_blank" rel="noopener">transformer</a> is mostly engineering. The defaults that work today:</p>
 <ul>
-  <li><b>AdamW</b> with β=(0.9, 0.95), weight decay 0.1.</li>
+  <li><b><a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam" target="_blank" rel="noopener">AdamW</a></b> with β=(0.9, 0.95), weight decay 0.1.</li>
   <li><b>Cosine</b> learning-rate schedule with linear warmup (a few thousand steps), max LR scaled with batch size.</li>
-  <li><b>Mixed precision</b> — bf16 dominates fp16 for stability; fp8 emerging for H100/B200.</li>
+  <li><b>Mixed precision</b> — <a href="https://en.wikipedia.org/wiki/Bfloat16_floating-point_format" target="_blank" rel="noopener">bf16</a> dominates <a href="https://en.wikipedia.org/wiki/Half-precision_floating-point_format" target="_blank" rel="noopener">fp16</a> for stability; fp8 emerging for H100/B200.</li>
   <li><b>ZeRO</b> (DeepSpeed) and <b>FSDP</b> (PyTorch) for sharding optimizer state, gradients, and parameters across GPUs.</li>
   <li><b>Gradient clipping</b> at 1.0 to control loss spikes.</li>
   <li><b>μP</b> (Maximal Update Parameterization) — transfer hyperparameters from small to large models.</li>

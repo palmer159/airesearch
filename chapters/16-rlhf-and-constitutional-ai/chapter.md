@@ -4,7 +4,7 @@ title: RLHF and Constitutional AI
 part: IV. Post-training & Alignment
 ---
 
-<p><b>RLHF</b> (Christiano 2017; OpenAI's InstructGPT 2022) trains a reward model from human pairwise preferences,
+<p><b><a href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback" target="_blank" rel="noopener">RLHF</a></b> (Christiano 2017; OpenAI's InstructGPT 2022) trains a reward model from human pairwise preferences,
 then runs PPO against the LM. It produced ChatGPT and remains the gold standard when human labels are abundant
 and quality matters.</p>
 <p><b>Constitutional AI</b> (Anthropic, 2022) replaces most human labels with model-generated critiques against a

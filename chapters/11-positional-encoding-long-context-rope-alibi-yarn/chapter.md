@@ -6,7 +6,7 @@ part: III. Architecture Frontiers
 
 <p>Vanilla absolute positions don't extrapolate beyond training length. Modern systems use:</p>
 <ul>
-  <li><b>RoPE</b> (Rotary Position Embedding) — rotates query/key vectors by a position-dependent angle. Llama, Qwen, Mistral.</li>
+  <li><b>RoPE</b> (Rotary Position Embedding) — rotates query/key vectors by a position-dependent angle. <a href="https://en.wikipedia.org/wiki/Llama_(language_model)" target="_blank" rel="noopener">Llama</a>, Qwen, <a href="https://en.wikipedia.org/wiki/Mistral_AI" target="_blank" rel="noopener">Mistral</a>.</li>
   <li><b>ALiBi</b> — adds a linear distance bias to attention; trivial extrapolation but slightly weaker quality.</li>
   <li><b>YaRN / NTK-aware scaling</b> — interpolation tricks that cheaply stretch a RoPE model to 32k–128k context.</li>
 </ul>

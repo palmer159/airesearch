@@ -5,7 +5,7 @@ part: VII. Small Language Models
 ---
 
 <p>Microsoft Research's <b>Phi</b> series argued that <i>data quality dominates scale</i>: with carefully curated
-"textbook-quality" synthetic data, a 1.3B model can beat 7B contemporaries on coding and reasoning. Phi-2, Phi-3,
+"textbook-quality" <a href="https://en.wikipedia.org/wiki/Synthetic_data" target="_blank" rel="noopener">synthetic data</a>, a 1.3B model can beat 7B contemporaries on coding and reasoning. Phi-2, Phi-3,
 and Phi-4 (mini/medium/multimodal) made this practical: state-of-the-art tasks running at SLM cost.</p>
 <p>The key technique is generating <i>diverse, pedagogically-structured</i> synthetic data with a stronger teacher
 model, filtered for difficulty and quality. This recipe is now standard across SLM teams (Microsoft, Apple, Google).</p>

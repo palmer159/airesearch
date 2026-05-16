@@ -8,7 +8,7 @@ part: IV. Post-training & Alignment
 freezes the base model and trains tiny add-ons:</p>
 <ul>
   <li><b>LoRA</b> (Hu et al., 2021) — low-rank update <code>ΔW = B·A</code>, typically 0.1-1% of params.</li>
-  <li><b>QLoRA</b> (Dettmers et al., 2023) — base model quantized to 4-bit; LoRA in fp16. Fine-tune 65B on a single 48GB GPU.</li>
+  <li><b>QLoRA</b> (Dettmers et al., 2023) — base model quantized to 4-bit; LoRA in <a href="https://en.wikipedia.org/wiki/Half-precision_floating-point_format" target="_blank" rel="noopener">fp16</a>. Fine-tune 65B on a single 48GB GPU.</li>
   <li><b>Adapters</b> (Houlsby et al., 2019) — bottleneck modules inserted in each layer; pre-LoRA classic.</li>
 </ul>
 <p>Practical default in 2026: <b>QLoRA + DPO</b> on a strong open base. You'll spend more time on data than on optimization.</p>

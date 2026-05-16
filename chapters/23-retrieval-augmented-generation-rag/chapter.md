@@ -4,7 +4,7 @@ title: Retrieval-Augmented Generation (RAG)
 part: VI. Retrieval & Grounding
 ---
 
-<p>RAG = retrieve relevant documents → put them in the prompt → generate. Unfashionable in 2024 hype-cycles but
+<p><a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation" target="_blank" rel="noopener">RAG</a> = retrieve relevant documents → put them in the prompt → generate. Unfashionable in 2024 hype-cycles but
 indispensable in production: it grounds answers, scopes data freshness, and keeps proprietary content out of weights.</p>
 <h4>Production RAG checklist</h4>
 <ol>

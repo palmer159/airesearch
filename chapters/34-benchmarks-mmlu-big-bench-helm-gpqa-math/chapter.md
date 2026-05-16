@@ -4,8 +4,8 @@ title: Benchmarks: MMLU, BIG-Bench, HELM, GPQA, MATH
 part: IX. Evaluation
 ---
 
-<p>Modern benchmarks span breadth (<b>MMLU</b> across 57 subjects), reasoning depth (<b>GPQA</b>, expert-written
-PhD-level), math (<b>MATH</b>, AIME, FrontierMath), and code (<b>HumanEval</b>, <b>MBPP</b>, SWE-bench).
+<p>Modern benchmarks span breadth (<b><a href="https://en.wikipedia.org/wiki/Massive_Multitask_Language_Understanding" target="_blank" rel="noopener">MMLU</a></b> across 57 subjects), reasoning depth (<b>GPQA</b>, expert-written
+PhD-level), math (<b>MATH</b>, AIME, FrontierMath), and code (<b>HumanEval</b>, <b>MBPP</b>, <a href="https://en.wikipedia.org/wiki/SWE-Bench" target="_blank" rel="noopener">SWE-bench</a>).
 <b>HELM</b> (Stanford) advocates holistic, multi-metric evaluation; the <b>Open LLM Leaderboard 2</b> is the
 practical reference for open-weights models.</p>
 <p>Important: most popular benchmarks are now contaminated. Always pair an old benchmark with a recent contamination-free one

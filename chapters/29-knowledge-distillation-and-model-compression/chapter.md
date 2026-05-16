@@ -4,7 +4,7 @@ title: Knowledge Distillation and Model Compression
 part: VII. Small Language Models
 ---
 
-<p>Distillation trains a small student to imitate a large teacher's distributions, hidden states, or behavior.
+<p><a href="https://en.wikipedia.org/wiki/Knowledge_distillation" target="_blank" rel="noopener">Distillation</a> trains a small student to imitate a large teacher's distributions, hidden states, or behavior.
 Combined with quantization and pruning, it's the backbone of every successful SLM family.</p>
 <h4>Modes</h4>
 <ul>

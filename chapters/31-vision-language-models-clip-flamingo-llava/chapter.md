@@ -5,7 +5,7 @@ part: VIII. Multimodal
 ---
 
 <p>Multimodal LMs feed images (and audio, video) into a language backbone. The dominant recipe:
-encode the image with a Vision Transformer (often CLIP-pretrained), project into the LM's token space,
+encode the image with a <a href="https://en.wikipedia.org/wiki/Vision_transformer" target="_blank" rel="noopener">Vision Transformer</a> (often <a href="https://web.archive.org/web/2026/https://openai.com/index/clip/" target="_blank" rel="noopener">CLIP</a>-pretrained), project into the LM's token space,
 and finetune jointly. <b>LLaVA</b> (2023) made this practical at small scale; <b>Flamingo</b> (2022)
 established the gated cross-attention approach.</p>
 

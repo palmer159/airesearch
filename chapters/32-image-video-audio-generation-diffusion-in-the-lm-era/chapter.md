@@ -4,11 +4,11 @@ title: Image / Video / Audio Generation: Diffusion in the LM Era
 part: VIII. Multimodal
 ---
 
-<p>Generation in the modern stack is dominated by <b>diffusion</b> (Ho et al., 2020) and increasingly
+<p>Generation in the modern stack is dominated by <b><a href="https://en.wikipedia.org/wiki/Diffusion_model" target="_blank" rel="noopener">diffusion</a></b> (Ho et al., 2020) and increasingly
 <b>flow matching</b> (Lipman et al., 2023). DALL·E 2/3, Stable Diffusion, Imagen, Sora, Veo — all use a
 text encoder (often a frozen LM) to condition a denoising diffusion / latent diffusion model.</p>
-<p>For audio: <b>AudioLM</b>, <b>MusicLM</b>, and OpenAI's Whisper / Voice all show that the same
-"discrete-tokens-on-a-transformer" recipe transfers to speech and music.</p>
+<p>For audio: <b>AudioLM</b>, <b>MusicLM</b>, and OpenAI's <a href="https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)" target="_blank" rel="noopener">Whisper</a> / Voice all show that the same
+"discrete-tokens-on-a-<a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" target="_blank" rel="noopener">transformer</a>" recipe transfers to speech and music.</p>
 
 ## Papers
 

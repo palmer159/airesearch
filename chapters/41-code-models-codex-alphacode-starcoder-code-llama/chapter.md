@@ -6,7 +6,7 @@ part: XI. AI for Code & Software Engineering
 
 <p>Code is a near-perfect domain for LMs: massive supervised data (open-source), unambiguous correctness signal
 (unit tests), structured outputs. The lineage runs Codex (2021) → AlphaCode (2022) → StarCoder/StarCoder2 →
-Code Llama → Qwen2.5-Coder / DeepSeek-Coder-V2 / Codestral. Modern open coders match GPT-4-class performance
+Code <a href="https://en.wikipedia.org/wiki/Llama_(language_model)" target="_blank" rel="noopener">Llama</a> → Qwen2.5-Coder / DeepSeek-Coder-V2 / Codestral. Modern open coders match GPT-4-class performance
 on HumanEval / MBPP.</p>
 
 ## Papers

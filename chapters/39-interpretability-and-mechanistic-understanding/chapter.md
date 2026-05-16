@@ -4,7 +4,7 @@ title: Interpretability and Mechanistic Understanding
 part: X. AI Safety & Alignment
 ---
 
-<p>Mechanistic interpretability tries to reverse-engineer what computation a model implements.
+<p><a href="https://en.wikipedia.org/wiki/Mechanistic_interpretability" target="_blank" rel="noopener">Mechanistic interpretability</a> tries to reverse-engineer what computation a model implements.
 2023-25 milestones: <b>induction heads</b> (Olsson et al.), <b>features as directions</b> (Elhage et al.),
 and the dramatic <b>Sparse Autoencoders</b> result (Anthropic, 2024) — extracting millions of
 human-interpretable features from a frontier model's residual stream.</p>

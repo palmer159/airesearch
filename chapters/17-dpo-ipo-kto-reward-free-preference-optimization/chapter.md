@@ -6,7 +6,7 @@ part: IV. Post-training & Alignment
 
 <p><b>Direct Preference Optimization</b> (Rafailov et al., 2023) collapses the reward model + PPO pipeline into
 a single closed-form classification loss over preference pairs. It's <i>much</i> simpler to implement, more stable,
-and matches RLHF on most benchmarks. DPO and its variants (IPO, KTO, ORPO) now dominate open-source post-training.</p>
+and matches <a href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback" target="_blank" rel="noopener">RLHF</a> on most benchmarks. DPO and its variants (IPO, KTO, ORPO) now dominate open-source post-training.</p>
 
 <h4>The DPO loss in one line</h4>
 <pre>

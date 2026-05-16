@@ -4,8 +4,8 @@ title: GPT-1/2/3 and the Decoder-Only Paradigm
 part: I. Foundations
 ---
 
-<p>OpenAI's GPT line bet on <b>decoder-only autoregressive</b> models and on <b>scale</b>. GPT-3 (2020) was the
-inflection point: at 175B parameters, in-context learning emerged — you could prompt the model with examples and
+<p>OpenAI's GPT line bet on <b>decoder-only <a href="https://en.wikipedia.org/wiki/Autoregressive_model" target="_blank" rel="noopener">autoregressive</a></b> models and on <b>scale</b>. <a href="https://en.wikipedia.org/wiki/GPT-3" target="_blank" rel="noopener">GPT-3</a> (2020) was the
+inflection point: at 175B parameters, <a href="https://en.wikipedia.org/wiki/In-context_learning" target="_blank" rel="noopener">in-context learning</a> emerged — you could prompt the model with examples and
 get a usable downstream learner without any gradient updates.</p>
 
 <h4>Why decoder-only won</h4>

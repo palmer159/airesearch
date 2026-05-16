@@ -5,7 +5,7 @@ part: X. AI Safety & Alignment
 ---
 
 <p>An aligned model is not a robust model. Adversarial prompts, gradient-based attacks (GCG), many-shot jailbreaks,
-and prompt-injection in tool-use settings remain unsolved. Practitioners should:</p>
+and <a href="https://en.wikipedia.org/wiki/Prompt_injection" target="_blank" rel="noopener">prompt-injection</a> in tool-use settings remain unsolved. Practitioners should:</p>
 <ul>
   <li>Maintain an internal red-team and rotating attack library.</li>
   <li>Treat prompt-injection as a <b>security</b> problem (untrusted retrieved/tool output), not just an alignment one.</li>

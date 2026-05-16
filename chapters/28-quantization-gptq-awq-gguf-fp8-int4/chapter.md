@@ -4,7 +4,7 @@ title: Quantization: GPTQ, AWQ, GGUF, FP8/INT4
 part: VII. Small Language Models
 ---
 
-<p>Quantization is the bridge from research to deployment. Modern weight-only schemes:</p>
+<p><a href="https://en.wikipedia.org/wiki/Quantization_(signal_processing)" target="_blank" rel="noopener">Quantization</a> is the bridge from research to deployment. Modern weight-only schemes:</p>
 <ul>
   <li><b>GPTQ</b> — second-order error minimization; 4-bit, near-lossless on most LMs.</li>
   <li><b>AWQ</b> — activation-aware; preserves salient channels at higher precision.</li>

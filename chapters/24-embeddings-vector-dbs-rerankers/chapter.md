@@ -4,7 +4,7 @@ title: Embeddings, Vector DBs, Rerankers
 part: VI. Retrieval & Grounding
 ---
 
-<p>Embedding models project text into a fixed-dimensional vector space where cosine similarity ≈ semantic similarity.
+<p>Embedding models project text into a fixed-dimensional vector space where <a href="https://en.wikipedia.org/wiki/Cosine_similarity" target="_blank" rel="noopener">cosine similarity</a> ≈ semantic similarity.
 The <b>MTEB</b> leaderboard tracks the state of the art (BGE, E5, GTE, NV-Embed, then Cohere/OpenAI/Voyage).</p>
 <p>Practical stack:</p>
 <ul>

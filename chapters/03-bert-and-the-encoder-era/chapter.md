@@ -4,13 +4,13 @@ title: BERT and the Encoder Era
 part: I. Foundations
 ---
 
-<p><b>BERT</b> (2018) showed that a deep bidirectional transformer pretrained with masked-LM + next-sentence-prediction
+<p><b><a href="https://en.wikipedia.org/wiki/BERT_(language_model)" target="_blank" rel="noopener">BERT</a></b> (2018) showed that a deep bidirectional <a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" target="_blank" rel="noopener">transformer</a> pretrained with masked-LM + next-sentence-prediction
 beats every supervised SOTA on 11 NLP tasks after fine-tuning. The lesson: <i>pretrain once, fine-tune everywhere</i>.</p>
 
 <p>Successors refined the recipe — <b>RoBERTa</b> (drop NSP, train longer), <b>ALBERT</b> (parameter sharing),
 <b>DeBERTa</b> (disentangled attention), <b>ELECTRA</b> (replaced-token detection, more sample-efficient).</p>
 
-<p>Encoders remain the right tool for <b>retrieval</b>, <b>classification</b>, and <b>embeddings</b> (see Ch. 30 on RAG).</p>
+<p>Encoders remain the right tool for <b>retrieval</b>, <b>classification</b>, and <b>embeddings</b> (see Ch. 30 on <a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation" target="_blank" rel="noopener">RAG</a>).</p>
 
 ## Papers
 

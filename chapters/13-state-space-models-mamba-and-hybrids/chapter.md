@@ -4,7 +4,7 @@ title: State-Space Models: Mamba and Hybrids
 part: III. Architecture Frontiers
 ---
 
-<p>Self-attention is O(n²) in sequence length. <b>State-space models (SSMs)</b> like S4 and <b>Mamba</b> compute
+<p>Self-attention is O(n²) in sequence length. <b><a href="https://en.wikipedia.org/wiki/State-space_model" target="_blank" rel="noopener">State-space models</a> (SSMs)</b> like S4 and <b>Mamba</b> compute
 in O(n) using a learnable recurrence. Mamba uses <i>selective</i> SSMs — input-dependent dynamics — to recover the
 context-routing flexibility that attention provides.</p>
 <p>In 2024-25 the field converged on <b>hybrid</b> architectures (e.g., Jamba, Samba): mostly Mamba with a few attention

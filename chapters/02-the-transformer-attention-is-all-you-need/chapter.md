@@ -4,7 +4,7 @@ title: The Transformer: Attention Is All You Need
 part: I. Foundations
 ---
 
-<p>The 2017 transformer replaces recurrence with <b>self-attention</b>: each token attends to every other token in
+<p>The 2017 <a href="https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)" target="_blank" rel="noopener">transformer</a> replaces recurrence with <b><a href="https://en.wikipedia.org/wiki/Attention_(machine_learning)" target="_blank" rel="noopener">self-attention</a></b>: each token attends to every other token in
 parallel. Three ingredients matter: scaled dot-product attention, multi-head attention, and positional encodings.</p>
 
 <h4>Self-attention in one equation</h4>
@@ -16,7 +16,7 @@ and the inductive bias is mild enough that scaling up just keeps working.</p>
 
 <h4>Encoder vs decoder vs encoder-decoder</h4>
 <ul>
-  <li><b>Encoder-only</b> (BERT family) — bidirectional, good for classification/retrieval.</li>
+  <li><b>Encoder-only</b> (<a href="https://en.wikipedia.org/wiki/BERT_(language_model)" target="_blank" rel="noopener">BERT</a> family) — bidirectional, good for classification/retrieval.</li>
   <li><b>Decoder-only</b> (GPT family) — causal, good for generation. The dominant modern form.</li>
   <li><b>Encoder-decoder</b> (T5, original Transformer) — good for seq2seq translation/summarization.</li>
 </ul>

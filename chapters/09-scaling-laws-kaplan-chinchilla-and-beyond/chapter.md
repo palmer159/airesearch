@@ -13,8 +13,8 @@ part: II. Training & Data
 </ul>
 <p>Chinchilla's insight reshaped the entire field. It also motivated the SLM movement (Ch. 17): if you train smaller
 models on more tokens, you get inference-time efficiency for free.</p>
-<p>Open question for 2026: with synthetic data and curriculum, are we approaching a regime where the data axis is the
-true bottleneck — and should new scaling laws account for data quality, not just quantity?</p>
+<p>Open question for 2026: with <a href="https://en.wikipedia.org/wiki/Synthetic_data" target="_blank" rel="noopener">synthetic data</a> and curriculum, are we approaching a regime where the data axis is the
+true bottleneck — and should new <a href="https://en.wikipedia.org/wiki/Neural_scaling_law" target="_blank" rel="noopener">scaling laws</a> account for data quality, not just quantity?</p>
 
 ## Papers
 

@@ -4,7 +4,7 @@ title: AI for Science: AlphaFold, Materials, Theorem Proving
 part: XII. Research Frontier
 ---
 
-<p>The most consequential externally-validated AI results are in science: <b>AlphaFold</b> (Nobel-cited, 2024) and
+<p>The most consequential externally-validated AI results are in science: <b><a href="https://en.wikipedia.org/wiki/AlphaFold" target="_blank" rel="noopener">AlphaFold</a></b> (Nobel-cited, 2024) and
 <b>AlphaFold 3</b> (multi-molecule complexes), <b>GNoME</b> (2.2M new candidate materials), <b>AlphaProof / AlphaGeometry 2</b>
 (IMO silver-medal-level, 2024). For practitioners these matter as proof-of-concept that <i>verifier-driven</i>
 neural search is a genuinely new way to do science — when you have a reliable checker, the LM is mainly searching.</p>

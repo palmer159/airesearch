@@ -6,12 +6,18 @@ Python HTTP server. Built for a postgraduate computer-science student aiming
 to do AI research or operate as an AI practitioner in a tech company.
 
 - **48 mini chapters** across 12 parts
-- **211 outbound links** to authoritative sources, all verified to load
-- **Open access only** — every paper is on a free, public source (arXiv,
+- **194 paper citations** + **17 tool/extras links** + an inline **glossary**
+  that hyperlinks first mentions of concepts and acronyms (n-gram, transformer,
+  RLHF, MoE, RAG, CoT, AdamW, MMLU, …) to authoritative explainers
+- **249 outbound links total**, every one verified to return HTTP 200
+- **Open access only** — every link points to a free, public source (arXiv,
   Nature OA, lab CDNs like cdn.openai.com / www-cdn.anthropic.com,
-  transformer-circuits.pub, JMLR, ISCA, Stanford / Harvard faculty pages,
-  GitHub, Wayback for a small handful that block programmatic fetches)
+  transformer-circuits.pub, JMLR, ISCA, Wikipedia, Stanford / Harvard faculty
+  pages, GitHub, Wayback for a small handful that block programmatic fetches)
 - Chapter content lives on disk as Markdown; the server renders it
+- Citations have been verified against the actual cited paper (arXiv title
+  match for arXiv links, PDF text inspection for PDFs, page-title check
+  for everything else)
 
 ---
 
@@ -41,6 +47,9 @@ airesearch/
 ├── README.md
 ├── server.py              # HTTP server (renders pages from chapters/)
 ├── loader.py              # Markdown-with-frontmatter parser
+├── glossary.py            # phrase → explainer-URL table
+├── tools/
+│   └── linkify.py         # injects glossary links into chapter.md files
 └── chapters/
     ├── 01-from-n-grams-to-neural-lms-a-brief-history/
     │   └── chapter.md
@@ -172,6 +181,21 @@ Summary.
 ```
 
 `loader.py` is the source of truth for the format.
+
+### Inline glossary
+
+`glossary.py` defines a list of `(phrase, url)` pairs that the server's
+chapter prose links to. After editing it (or after rewriting any chapter's
+summary section), run:
+
+```bash
+python3 tools/linkify.py
+```
+
+The script wraps the **first occurrence per chapter** of each glossary
+phrase in an `<a>` tag pointing to the explainer. It is safe to re-run —
+it skips text already inside `<a>`, `<pre>`, or `<code>` blocks, and
+won't double-wrap a URL that's already present.
 
 ---
 

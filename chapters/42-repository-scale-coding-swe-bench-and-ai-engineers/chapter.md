@@ -4,7 +4,7 @@ title: Repository-Scale Coding: SWE-bench and AI Engineers
 part: XI. AI for Code & Software Engineering
 ---
 
-<p>Function-level evals (HumanEval) saturated. The frontier moved to <b>SWE-bench</b> (Jimenez et al., 2024) —
+<p>Function-level evals (HumanEval) saturated. The frontier moved to <b><a href="https://en.wikipedia.org/wiki/SWE-Bench" target="_blank" rel="noopener">SWE-bench</a></b> (Jimenez et al., 2024) —
 real GitHub issues paired with passing tests. SWE-bench Verified is the de-facto credibility metric for
 "AI software engineer" agents (Devin, OpenHands, Aider, Claude Code, Cursor agents).</p>
 <p>Open results in 2025 routinely exceed 50% on SWE-bench Verified, up from <2% in early 2024. The
