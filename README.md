@@ -1,11 +1,11 @@
 # LLM Study Guide
 
-A curated 48-chapter study guide on **Large Language Model (LLM) and Small
+A curated 12-section study guide on **Large Language Model (LLM) and Small
 Language Model (SLM) research and engineering**, served by a tiny stdlib-only
 Python HTTP server. Built for a postgraduate computer-science student aiming
 to do AI research or operate as an AI practitioner in a tech company.
 
-- **48 chapters** across 12 parts
+- **48 mini chapters** across 12 parts
 - **211 outbound links** to authoritative sources, all verified to load
 - **Open access only** — every paper is on a free, public source (arXiv,
   Nature OA, lab CDNs like cdn.openai.com / www-cdn.anthropic.com,
@@ -16,6 +16,9 @@ to do AI research or operate as an AI practitioner in a tech company.
 ---
 
 ## Quick start
+You can just browse all the chapters right here on git, or start the web server and
+read and navigate there using the below instructions. Submit a PR for any additions 
+to the content.
 
 ```bash
 git clone git@github.com:palmer159/airesearch.git
