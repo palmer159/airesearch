@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-SLM/LLM Study Guide — local HTTP server.
+LLM Study Guide — local HTTP server.
 
-Serves a curated, ~48-chapter study guide on SLM and LLM research, technology, safety,
-and software engineering applications. Most paper links go to authoritative public
-sources (arXiv, Nature, ACM, lab blogs); only the index/chapter pages are rendered locally.
+Serves a curated 48-chapter study guide on LLM (and SLM) research, technology,
+safety, and software-engineering applications. Chapter content lives on disk in
+./chapters/NN-slug/chapter.md and is loaded at startup. Most paper links point
+to authoritative public sources (arXiv, Nature OA, lab CDNs).
 
 Run:
     python3 server.py [PORT]
@@ -22,7 +23,16 @@ import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import unquote, urlparse
 
-from chapters import CHAPTERS, by_part
+from loader import load_all_chapters
+
+CHAPTERS = load_all_chapters()
+
+
+def by_part() -> dict[str, list[dict]]:
+    parts: dict[str, list[dict]] = {}
+    for ch in CHAPTERS:
+        parts.setdefault(ch["part"], []).append(ch)
+    return parts
 
 DEFAULT_PORT = 47314  # unregistered, unprivileged
 HOST = "127.0.0.1"
@@ -130,12 +140,12 @@ def render_layout(title: str, body: str, active_id: int | None = None) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(title)} — SLM/LLM Study Guide</title>
+<title>{html.escape(title)} — LLM Study Guide</title>
 <style>{CSS}</style>
 </head>
 <body>
 <header class="site">
-  <h1><a href="/" style="color:inherit;text-decoration:none">SLM &amp; LLM Study Guide</a></h1>
+  <h1><a href="/" style="color:inherit;text-decoration:none">LLM Study Guide</a></h1>
   <span class="kv">A curated postgraduate path • 48 chapters</span>
   <nav class="nav">
     <a href="/">Index</a>
@@ -171,7 +181,7 @@ def render_index() -> str:
         cards.append("</div>")
     body = f"""
     <div class="part-tag">Welcome</div>
-    <h1 class="chapter-title">A Comprehensive Study Guide for SLM &amp; LLM Research</h1>
+    <h1 class="chapter-title">A Comprehensive Study Guide for LLM Research</h1>
     <div class="summary">
       <p>This guide is built for a postgraduate computer-science student who wants to do
       <b>AI research</b> and to operate as an <b>AI practitioner in tech companies</b>. It walks
@@ -311,7 +321,7 @@ def render_about() -> str:
 # ---------------------------------------------------------------------------
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "SLMLLMGuide/1.0"
+    server_version = "LLMStudyGuide/1.0"
 
     def _send(self, code: int, body: str, content_type: str = "text/html; charset=utf-8") -> None:
         data = body.encode("utf-8")
@@ -365,7 +375,7 @@ def main() -> None:
 
     httpd = ThreadingHTTPServer((HOST, port), Handler)
     url = f"http://{HOST}:{port}/"
-    print(f"SLM/LLM Study Guide serving at {url}")
+    print(f"LLM Study Guide serving at {url}")
     print(f"  • {len(CHAPTERS)} chapters, ~150 references")
     print("  • Bound to 127.0.0.1 only · no auth · uncommon port")
     print("  • Ctrl-C to stop")
