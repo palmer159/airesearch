@@ -193,6 +193,12 @@ in-script manifest.
 - Inline **glossary** that hyperlinks first mentions of concepts to free
   explainers (Wikipedia, faculty pages, MIT OCW, 3Blue1Brown).
 
+A **companion guide** lives at [`eval-guide/`](eval-guide/) — 20 chapters
+across 5 sections on **how to test and benchmark open SLMs and LLMs**, with
+a deep section on coding agents and SWE benchmarks (HumanEval,
+LiveCodeBench, BigCodeBench, SWE-bench Verified, and how to set up an
+agentic eval harness).
+
 ---
 
 ## Quick start
