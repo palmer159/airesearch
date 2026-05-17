@@ -45,6 +45,11 @@ Edit chapters by editing the entries in `MANIFEST` inside `regenerate.py`,
 then re-run the script. Hand edits to `chapters/*` are deliberately
 ephemeral.
 
+If you use Claude Code, the repo ships a project skill at
+`.claude/skills/regenerate-study-guide/` that drives this command for you —
+just ask Claude to "regenerate the study guide" and it will run the
+generator and print per-chapter progress.
+
 ---
 
 ## Curriculum
