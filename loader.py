@@ -145,7 +145,7 @@ def load_all_chapters(directory: str = CHAPTERS_DIR) -> list[dict]:
         sub = os.path.join(directory, name)
         if not os.path.isdir(sub):
             continue
-        md = os.path.join(sub, "chapter.md")
+        md = os.path.join(sub, "README.md")
         if not os.path.isfile(md):
             continue
         chapters.append(load_chapter(md))

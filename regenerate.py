@@ -68,7 +68,7 @@ def render_chapter_md(ch: Chapter) -> str:
 def write_chapter(ch: Chapter, total: int) -> None:
     folder = os.path.join(CHAPTERS_DIR, f"{ch.id:02d}-{ch.slug}")
     os.makedirs(folder, exist_ok=True)
-    md_path = os.path.join(folder, "chapter.md")
+    md_path = os.path.join(folder, "README.md")
     with open(md_path, "w") as f:
         f.write(render_chapter_md(ch))
     rel = os.path.relpath(md_path, ROOT)
@@ -243,8 +243,8 @@ airesearch/
 ├── loader.py              # Markdown-with-frontmatter parser
 ├── glossary.py            # phrase → explainer-URL table (generated)
 ├── tools/
-│   └── linkify.py         # injects glossary links into chapter.md files
-└── chapters/              # generated: NN-slug/chapter.md
+│   └── linkify.py         # injects glossary links into chapter READMEs
+└── chapters/              # generated: NN-slug/README.md (rendered inline on GitHub)
 ```
 
 ---

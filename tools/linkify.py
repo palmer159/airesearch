@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inject glossary hyperlinks into the summary section of every chapter.md.
+"""Inject glossary hyperlinks into the summary section of every chapter README.md.
 
 Rules:
   • Only the summary section (everything before the first `## ` heading) is
@@ -120,7 +120,7 @@ def main() -> None:
         d = os.path.join(CHAPTERS_DIR, name)
         if not os.path.isdir(d):
             continue
-        md = os.path.join(d, "chapter.md")
+        md = os.path.join(d, "README.md")
         if not os.path.isfile(md):
             continue
         n = process_file(md)

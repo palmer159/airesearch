@@ -2,9 +2,9 @@
 """
 LLM Study Guide — local HTTP server.
 
-Serves a curated 48-chapter study guide on LLM (and SLM) research, technology,
-safety, and software-engineering applications. Chapter content lives on disk in
-./chapters/NN-slug/chapter.md and is loaded at startup. Most paper links point
+Serves a curated study guide on LLM (and SLM) research, technology, safety,
+and software-engineering applications. Chapter content lives on disk in
+./chapters/NN-slug/README.md and is loaded at startup. Most paper links point
 to authoritative public sources (arXiv, Nature OA, lab CDNs).
 
 Run:

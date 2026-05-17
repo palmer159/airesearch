@@ -100,8 +100,8 @@ airesearch/
 ├── loader.py              # Markdown-with-frontmatter parser
 ├── glossary.py            # phrase → explainer-URL table (generated)
 ├── tools/
-│   └── linkify.py         # injects glossary links into chapter.md files
-└── chapters/              # generated: NN-slug/chapter.md
+│   └── linkify.py         # injects glossary links into chapter READMEs
+└── chapters/              # generated: NN-slug/README.md (rendered inline on GitHub)
 ```
 
 ---
